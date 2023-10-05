@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import chest from "@/assets/images/chest.png";
 import chance from "@/assets/images/chance.png";
+import { Field } from "@/components/Field";
 
 export default function Game() {
   const [height, setHeight] = useState(0);
@@ -26,24 +27,23 @@ export default function Game() {
   return (
     <div className="h-screen flex justify-center items-center">
       <div
-        className="rounded-md border-2 border-black shadow-lg"
+        className="rounded-md shadow-lg bg-black overflow-hidden"
         style={{
           height: `${height - 10}px`,
-          width: `${height}px`,
+          maxWidth: `${height}px`,
           display: "grid",
           gridTemplateColumns: "13% repeat(9, 1fr) 13%",
           gridTemplateRows: "13% repeat(9, 1fr) 13%",
-          gap: "1px",
           position: "relative",
+          gap: "1px",
+          padding: "1px",
         }}
       >
         {fields.map((field, index) => (
-          <div key={index} className="bg-green-500 w-fill h-fill">
-            {index}
-          </div>
+          <Field key={index} field={field} />
         ))}
         <div
-          className="w-fill h-fill flex justify-between items-center flex-col p-16 md:p-24"
+          className="w-fill h-fill flex justify-between items-center flex-col p-16 md:p-24 bg-green-200"
           style={{
             gridColumn: "2 / 11",
             gridRow: "2 / 11",

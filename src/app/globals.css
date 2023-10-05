@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .field {
+    @apply flex flex-col bg-green-200 text-xs text-center items-center;
+  }
+  .start {
+    @apply rounded-tl-md;
+  }
+
+  .freeParking {
+    @apply rounded-br-md;
+  }
+
+  .jail {
+    @apply rounded-tr-md;
+  }
+
+  .goToJail {
+    @apply rounded-bl-md;
+  }
+
+  .center {
+    @apply flex flex-col flex-1 justify-center items-center;
+  }
+  .price {
+    @apply text-xs text-gray-600;
+  }
+}
+
 html {
   overflow: hidden;
   height: 100vh;
