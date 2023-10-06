@@ -7,7 +7,7 @@
     @apply flex flex-col bg-green-200 text-xs text-center items-center;
   }
   .start {
-    @apply rounded-tl-md;
+    @apply rounded-tl-md font-bold;
   }
 
   .freeParking {
@@ -15,7 +15,7 @@
   }
 
   .jail {
-    @apply rounded-tr-md;
+    @apply rounded-tr-md p-2;
   }
 
   .goToJail {

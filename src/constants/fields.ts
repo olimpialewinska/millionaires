@@ -33,7 +33,7 @@ export const fields: IField[] = [
   },
   {
     id: 4,
-    name: "Zapłać",
+    name: "Podatek dochodowy",
     position: "left",
     color: null,
     price: 200,
@@ -103,7 +103,7 @@ export const fields: IField[] = [
   },
   {
     id: 38,
-    name: "Zapłać",
+    name: "Podatek dochodowy",
     position: "bottom",
     color: null,
     price: 100,

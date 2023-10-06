@@ -12,7 +12,6 @@ export default function Game() {
 
   useEffect(() => {
     setHeight(window.innerHeight);
-    console.log(window.innerHeight);
     window.addEventListener("resize", () => {
       setHeight(window.innerHeight);
     });
