@@ -24,15 +24,17 @@ export default function Game() {
   }, []);
 
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div className="flex justify-center items-center h-screen p-2">
       <div
-        className="rounded-md shadow-lg bg-black overflow-hidden"
+        className="rounded-md shadow-lg bg-black overflow-scroll"
         style={{
-          height: `${height - 10}px`,
-          maxWidth: `${height}px`,
           display: "grid",
-          gridTemplateColumns: "13% repeat(9, 1fr) 13%",
-          gridTemplateRows: "13% repeat(9, 1fr) 13%",
+          height: "100%",
+          maxWidth: height + 250,
+          gridTemplateColumns:
+            "minmax(80px, auto) repeat(9, 1fr) minmax(80px, auto)",
+          gridTemplateRows:
+            "minmax(80px, auto) repeat(9, 1fr) minmax(80px, auto)",
           position: "relative",
           gap: "1px",
           padding: "1px",

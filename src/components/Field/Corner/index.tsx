@@ -30,7 +30,7 @@ export const Corner = ({ field }: FieldProps) => {
     <div className={`field ${field.type}`}>
       <p>{field.name}</p>
       <div className="center">
-        <Image src={src} alt={alt} width={70} height={60} />
+        <Image src={src} alt={alt} layout="fill" objectFit="contain" />
       </div>
     </div>
   );

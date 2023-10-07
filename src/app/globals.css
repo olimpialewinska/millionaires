@@ -4,7 +4,7 @@
 
 @layer components {
   .field {
-    @apply flex flex-col bg-green-200 text-xs text-center items-center;
+    @apply flex flex-col bg-green-200 text-xs text-center items-center p-1 min-w-[80px] min-h-[80px];
   }
   .start {
     @apply rounded-tl-md font-bold;
@@ -23,21 +23,15 @@
   }
 
   .center {
-    @apply flex flex-col flex-1 justify-center items-center;
+    @apply flex flex-col w-full h-full justify-center items-center relative;
   }
   .price {
     @apply text-xs text-gray-600;
   }
 }
 
-html {
-  overflow: hidden;
-  height: 100vh;
-}
-
 body {
-  overflow: hidden;
-  height: 100vh;
+  overscroll-behavior: none;
   color: #000;
   background: linear-gradient(
     0deg,

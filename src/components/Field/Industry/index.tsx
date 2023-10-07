@@ -18,9 +18,9 @@ export const Industry = ({ field }: FieldProps) => {
   const { src } = getImageSrcAndAlt();
   return (
     <div className="field">
-      {field.name}
+      <p className="whitespace-nowrap">{field.name}</p>
       <div className="center">
-        <Image src={src} alt={field.name} width={70} height={60} />
+        <Image src={src} alt={field.name} layout="fill" objectFit="contain" />
       </div>
       {field.price && <div className="price">{field.price} $</div>}
     </div>

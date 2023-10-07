@@ -7,7 +7,12 @@ export const Chest = ({ field }: FieldProps) => {
     <div className="field">
       <p>{field.name}</p>
       <div className="center">
-        <Image src={smallChest} alt="small chest" width={60} height={60} />
+        <Image
+          src={smallChest}
+          alt="small chest"
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
     </div>
   );
