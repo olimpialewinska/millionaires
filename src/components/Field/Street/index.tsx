@@ -7,7 +7,7 @@ export const Street = ({ field }: FieldProps) => {
       <div className="h-4" style={{ backgroundColor: field.color ?? "" }}></div>
       <div className="flex-1 flex flex-col justify-between py-1">
         <p>{field.name}</p>
-        <p className="text-xs text-gray-600">{field.price} $</p>
+        <p className="price">{field.price} $</p>
       </div>
     </div>
   );

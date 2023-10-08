@@ -5,10 +5,25 @@ import Image from "next/image";
 
 import chest from "@/assets/images/chest.png";
 import chance from "@/assets/images/chance.png";
+import assets from "@/assets/images/assets.png";
+import exit from "@/assets/images/x.png";
 import { Field } from "@/components/Field";
+import Link from "next/link";
+import { Modal } from "@/components/Modal";
+import { SlidingPanel } from "@/components/SlidingPanel";
 
 export default function Game() {
   const [height, setHeight] = useState(0);
+  const [cardModal, setCardModal] = useState(false);
+  const [panelOpen, setPanelOpen] = useState(false);
+
+  const toggleCardModal = () => {
+    setCardModal(!cardModal);
+  };
+
+  const togglePanel = () => {
+    setPanelOpen(!panelOpen);
+  };
 
   useEffect(() => {
     setHeight(window.innerHeight);
@@ -24,7 +39,7 @@ export default function Game() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-screen p-2">
+    <div className="flex justify-center items-center h-screen py-12 sm:py-2 relative">
       <div
         className="rounded-md shadow-lg bg-black overflow-scroll"
         style={{
@@ -35,7 +50,6 @@ export default function Game() {
             "minmax(80px, auto) repeat(9, 1fr) minmax(80px, auto)",
           gridTemplateRows:
             "minmax(80px, auto) repeat(9, 1fr) minmax(80px, auto)",
-          position: "relative",
           gap: "1px",
           padding: "1px",
         }}
@@ -50,21 +64,38 @@ export default function Game() {
             gridRow: "2 / 11",
           }}
         >
-          <Image
-            src={chance}
-            alt="chance"
-            width={140}
-            className="rounded-md border-2 border-black shadow-lg"
-          />
+          <Image src={chance} alt="chance" width={140} className="card" />
           <div className="text-3xl font-bold md:text-6xl">Millionaires</div>
-          <Image
-            src={chest}
-            alt="chest"
-            width={140}
-            className="rounded-md border-2 border-black shadow-lg"
-          />
+          <Image src={chest} alt="chest" width={140} className="card" />
         </div>
       </div>
+
+      <Link
+        href="/"
+        className="absolute top-0 left-0 bg-red-300 p-2 flex flex-row items-center justify-center hover:bg-red-400 transition-all ease-in-out rounded-br-md shadow-lg"
+      >
+        <Image src={exit} alt="exit" width={10} height={10} />
+        <p className="ml-2 font-bold">Wyjdź</p>
+      </Link>
+
+      <div
+        className="control bottom-0 right-0 rounded-tl-md"
+        onClick={toggleCardModal}
+      >
+        <Image src={assets} alt="exit" width={18} height={18} />
+        <p className="ml-2 font-bold">Karty</p>
+      </div>
+      <div
+        className="control bottom-0 left-0 rounded-tr-md"
+        onClick={togglePanel}
+      >
+        <p className="ml-2 font-bold">Gracze</p>
+      </div>
+
+      <SlidingPanel open={panelOpen} onClick={togglePanel} />
+      <Modal isOpen={cardModal} onClose={toggleCardModal}>
+        xd
+      </Modal>
     </div>
   );
 }

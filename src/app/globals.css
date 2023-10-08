@@ -26,13 +26,20 @@
     @apply flex flex-col w-full h-full justify-center items-center relative;
   }
   .price {
-    @apply text-xs text-gray-600;
+    @apply text-xs text-gray-700;
+  }
+
+  .card {
+    @apply rounded-md border-2 border-black shadow-lg hover:scale-125 transition-all ease-in-out cursor-pointer;
+  }
+
+  .control {
+    @apply absolute  bg-green-300 py-2 px-4 flex flex-row items-center justify-center hover:bg-green-400 transition-all ease-in-out shadow-lg cursor-pointer;
   }
 }
 
 body {
   overscroll-behavior: none;
-  color: #000;
   background: linear-gradient(
     0deg,
     rgba(211, 231, 204, 1) 0%,

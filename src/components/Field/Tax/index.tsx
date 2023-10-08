@@ -7,7 +7,12 @@ export const Tax = ({ field }: FieldProps) => {
     <div className="field">
       {field.name}
       <div className="center">
-        <Image src={src} alt={field.name} layout="fill" objectFit="contain" />
+        <Image
+          src={src}
+          alt={field.name}
+          style={{ objectFit: "contain" }}
+          fill
+        />
       </div>
       <div className="price">{field.price} $</div>
     </div>

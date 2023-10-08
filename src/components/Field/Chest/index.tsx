@@ -10,8 +10,8 @@ export const Chest = ({ field }: FieldProps) => {
         <Image
           src={smallChest}
           alt="small chest"
-          layout="fill"
-          objectFit="contain"
+          fill
+          style={{ objectFit: "cover" }}
         />
       </div>
     </div>

@@ -20,9 +20,14 @@ export const Industry = ({ field }: FieldProps) => {
     <div className="field">
       <p className="whitespace-nowrap">{field.name}</p>
       <div className="center">
-        <Image src={src} alt={field.name} layout="fill" objectFit="contain" />
+        <Image
+          src={src}
+          alt={field.name}
+          style={{ objectFit: "contain" }}
+          fill
+        />
       </div>
-      {field.price && <div className="price">{field.price} $</div>}
+      <div className="price">{field.price} $</div>
     </div>
   );
 };
