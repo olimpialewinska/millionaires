@@ -38,7 +38,7 @@ export const Modal = ({ children, isOpen, onClose }: ModalProps) => {
               onClick={close}
             >
               <animated.div
-                className="bg-white rounded-md shadow-lg p-4"
+                className="bg-white rounded-md shadow-lg p-4 max-h-screen gradient"
                 style={styles}
               >
                 {children}

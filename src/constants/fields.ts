@@ -15,6 +15,23 @@ export const fields: IField[] = [
     color: "#451a03",
     price: 60,
     type: "street",
+    costs: {
+      front: {
+        tax: 2,
+        fullSet: 4,
+        withOne: 10,
+        withTwo: 30,
+        withThree: 90,
+        withFour: 160,
+        withHotel: 250,
+        houseCost: 50,
+        hotelCost: 50,
+      },
+      back: {
+        mortgage: 30,
+        repayment: 33,
+      },
+    },
   },
   {
     id: 2,
@@ -30,6 +47,23 @@ export const fields: IField[] = [
     color: "#451a03",
     type: "street",
     price: 60,
+    costs: {
+      front: {
+        tax: 4,
+        fullSet: 8,
+        withOne: 20,
+        withTwo: 60,
+        withThree: 180,
+        withFour: 320,
+        withHotel: 450,
+        houseCost: 50,
+        hotelCost: 50,
+      },
+      back: {
+        mortgage: 30,
+        repayment: 33,
+      },
+    },
   },
   {
     id: 4,
@@ -46,6 +80,18 @@ export const fields: IField[] = [
     color: null,
     price: 200,
     type: "station",
+    costs: {
+      front: {
+        tax: 25,
+        taxForTwo: 50,
+        taxForThree: 100,
+        taxForFour: 200,
+      },
+      back: {
+        mortgage: 100,
+        repayment: 110,
+      },
+    },
   },
   {
     id: 6,
@@ -54,6 +100,23 @@ export const fields: IField[] = [
     color: "#67e8f9",
     price: 100,
     type: "street",
+    costs: {
+      front: {
+        tax: 6,
+        fullSet: 12,
+        withOne: 30,
+        withTwo: 90,
+        withThree: 270,
+        withFour: 400,
+        withHotel: 550,
+        houseCost: 50,
+        hotelCost: 50,
+      },
+      back: {
+        mortgage: 50,
+        repayment: 55,
+      },
+    },
   },
   {
     id: 7,
@@ -69,6 +132,23 @@ export const fields: IField[] = [
     color: "#67e8f9",
     price: 100,
     type: "street",
+    costs: {
+      front: {
+        tax: 6,
+        fullSet: 12,
+        withOne: 30,
+        withTwo: 90,
+        withThree: 270,
+        withFour: 400,
+        withHotel: 550,
+        houseCost: 50,
+        hotelCost: 50,
+      },
+      back: {
+        mortgage: 50,
+        repayment: 55,
+      },
+    },
   },
   {
     id: 9,
@@ -77,6 +157,23 @@ export const fields: IField[] = [
     color: "#67e8f9",
     price: 120,
     type: "street",
+    costs: {
+      front: {
+        tax: 8,
+        fullSet: 16,
+        withOne: 40,
+        withTwo: 100,
+        withThree: 300,
+        withFour: 450,
+        withHotel: 600,
+        houseCost: 50,
+        hotelCost: 50,
+      },
+      back: {
+        mortgage: 60,
+        repayment: 66,
+      },
+    },
   },
   {
     id: 10,
@@ -92,6 +189,23 @@ export const fields: IField[] = [
     color: "#1e40af",
     price: 400,
     type: "street",
+    costs: {
+      front: {
+        tax: 50,
+        fullSet: 100,
+        withOne: 200,
+        withTwo: 600,
+        withThree: 1400,
+        withFour: 1700,
+        withHotel: 2000,
+        houseCost: 200,
+        hotelCost: 200,
+      },
+      back: {
+        mortgage: 200,
+        repayment: 220,
+      },
+    },
   },
   {
     id: 11,
@@ -100,6 +214,23 @@ export const fields: IField[] = [
     color: "#ec4899",
     price: 140,
     type: "street",
+    costs: {
+      front: {
+        tax: 10,
+        fullSet: 20,
+        withOne: 50,
+        withTwo: 150,
+        withThree: 450,
+        withFour: 625,
+        withHotel: 750,
+        houseCost: 100,
+        hotelCost: 100,
+      },
+      back: {
+        mortgage: 70,
+        repayment: 77,
+      },
+    },
   },
   {
     id: 38,
@@ -116,6 +247,16 @@ export const fields: IField[] = [
     color: null,
     price: 150,
     type: "industry",
+    costs: {
+      front: {
+        tax: 4,
+        taxForTwo: 10,
+      },
+      back: {
+        mortgage: 75,
+        repayment: 83,
+      },
+    },
   },
   {
     id: 37,
@@ -124,6 +265,23 @@ export const fields: IField[] = [
     color: "#1e40af",
     price: 350,
     type: "street",
+    costs: {
+      front: {
+        tax: 35,
+        fullSet: 70,
+        withOne: 175,
+        withTwo: 500,
+        withThree: 1100,
+        withFour: 1300,
+        withHotel: 1500,
+        houseCost: 200,
+        hotelCost: 200,
+      },
+      back: {
+        mortgage: 175,
+        repayment: 193,
+      },
+    },
   },
   {
     id: 13,
@@ -132,6 +290,23 @@ export const fields: IField[] = [
     color: "#ec4899",
     price: 140,
     type: "street",
+    costs: {
+      front: {
+        tax: 10,
+        fullSet: 20,
+        withOne: 50,
+        withTwo: 150,
+        withThree: 450,
+        withFour: 625,
+        withHotel: 750,
+        houseCost: 100,
+        hotelCost: 100,
+      },
+      back: {
+        mortgage: 70,
+        repayment: 77,
+      },
+    },
   },
   { id: 36, name: "Szansa", position: "bottom", color: null, type: "chance" },
   {
@@ -141,6 +316,23 @@ export const fields: IField[] = [
     color: "#ec4899",
     price: 160,
     type: "street",
+    costs: {
+      front: {
+        tax: 12,
+        fullSet: 24,
+        withOne: 60,
+        withTwo: 180,
+        withThree: 500,
+        withFour: 700,
+        withHotel: 900,
+        houseCost: 100,
+        hotelCost: 100,
+      },
+      back: {
+        mortgage: 80,
+        repayment: 88,
+      },
+    },
   },
   {
     id: 35,
@@ -149,6 +341,18 @@ export const fields: IField[] = [
     color: null,
     price: 200,
     type: "station",
+    costs: {
+      front: {
+        tax: 25,
+        taxForTwo: 50,
+        taxForThree: 100,
+        taxForFour: 200,
+      },
+      back: {
+        mortgage: 100,
+        repayment: 110,
+      },
+    },
   },
   {
     id: 15,
@@ -157,6 +361,18 @@ export const fields: IField[] = [
     color: null,
     price: 200,
     type: "station",
+    costs: {
+      front: {
+        tax: 25,
+        taxForTwo: 50,
+        taxForThree: 100,
+        taxForFour: 200,
+      },
+      back: {
+        mortgage: 100,
+        repayment: 110,
+      },
+    },
   },
   {
     id: 34,
@@ -165,6 +381,23 @@ export const fields: IField[] = [
     color: "green",
     price: 320,
     type: "street",
+    costs: {
+      front: {
+        tax: 28,
+        fullSet: 56,
+        withOne: 150,
+        withTwo: 450,
+        withThree: 1000,
+        withFour: 1200,
+        withHotel: 1400,
+        houseCost: 200,
+        hotelCost: 200,
+      },
+      back: {
+        mortgage: 160,
+        repayment: 176,
+      },
+    },
   },
   {
     id: 16,
@@ -173,6 +406,23 @@ export const fields: IField[] = [
     color: "#fb923c",
     price: 180,
     type: "street",
+    costs: {
+      front: {
+        tax: 14,
+        fullSet: 28,
+        withOne: 70,
+        withTwo: 200,
+        withThree: 550,
+        withFour: 750,
+        withHotel: 950,
+        houseCost: 100,
+        hotelCost: 100,
+      },
+      back: {
+        mortgage: 90,
+        repayment: 99,
+      },
+    },
   },
   {
     id: 33,
@@ -195,6 +445,23 @@ export const fields: IField[] = [
     color: "green",
     price: 300,
     type: "street",
+    costs: {
+      front: {
+        tax: 26,
+        fullSet: 52,
+        withOne: 130,
+        withTwo: 390,
+        withThree: 900,
+        withFour: 1100,
+        withHotel: 1275,
+        houseCost: 200,
+        hotelCost: 200,
+      },
+      back: {
+        mortgage: 150,
+        repayment: 165,
+      },
+    },
   },
 
   {
@@ -204,6 +471,23 @@ export const fields: IField[] = [
     color: "#fb923c",
     price: 180,
     type: "street",
+    costs: {
+      front: {
+        tax: 14,
+        fullSet: 28,
+        withOne: 70,
+        withTwo: 200,
+        withThree: 550,
+        withFour: 750,
+        withHotel: 950,
+        houseCost: 100,
+        hotelCost: 100,
+      },
+      back: {
+        mortgage: 90,
+        repayment: 99,
+      },
+    },
   },
 
   {
@@ -213,6 +497,23 @@ export const fields: IField[] = [
     color: "green",
     price: 300,
     type: "street",
+    costs: {
+      front: {
+        tax: 26,
+        fullSet: 52,
+        withOne: 130,
+        withTwo: 390,
+        withThree: 900,
+        withFour: 1100,
+        withHotel: 1275,
+        houseCost: 200,
+        hotelCost: 200,
+      },
+      back: {
+        mortgage: 150,
+        repayment: 165,
+      },
+    },
   },
 
   {
@@ -222,6 +523,23 @@ export const fields: IField[] = [
     color: "#fb923c",
     price: 200,
     type: "street",
+    costs: {
+      front: {
+        tax: 16,
+        fullSet: 32,
+        withOne: 80,
+        withTwo: 220,
+        withThree: 600,
+        withFour: 800,
+        withHotel: 1000,
+        houseCost: 100,
+        hotelCost: 100,
+      },
+      back: {
+        mortgage: 100,
+        repayment: 110,
+      },
+    },
   },
   {
     id: 30,
@@ -237,6 +555,23 @@ export const fields: IField[] = [
     color: "yellow",
     price: 280,
     type: "street",
+    costs: {
+      front: {
+        tax: 24,
+        fullSet: 48,
+        withOne: 120,
+        withTwo: 360,
+        withThree: 850,
+        withFour: 1025,
+        withHotel: 1200,
+        houseCost: 150,
+        hotelCost: 150,
+      },
+      back: {
+        mortgage: 140,
+        repayment: 154,
+      },
+    },
   },
   {
     id: 28,
@@ -245,6 +580,16 @@ export const fields: IField[] = [
     color: null,
     price: 150,
     type: "industry",
+    costs: {
+      front: {
+        tax: 4,
+        taxForTwo: 10,
+      },
+      back: {
+        mortgage: 75,
+        repayment: 83,
+      },
+    },
   },
   {
     id: 27,
@@ -253,6 +598,23 @@ export const fields: IField[] = [
     color: "yellow",
     price: 260,
     type: "street",
+    costs: {
+      front: {
+        tax: 22,
+        fullSet: 44,
+        withOne: 110,
+        withTwo: 330,
+        withThree: 800,
+        withFour: 975,
+        withHotel: 1150,
+        houseCost: 150,
+        hotelCost: 150,
+      },
+      back: {
+        mortgage: 130,
+        repayment: 143,
+      },
+    },
   },
   {
     id: 26,
@@ -261,6 +623,23 @@ export const fields: IField[] = [
     color: "yellow",
     price: 260,
     type: "street",
+    costs: {
+      front: {
+        tax: 22,
+        fullSet: 44,
+        withOne: 110,
+        withTwo: 330,
+        withThree: 800,
+        withFour: 975,
+        withHotel: 1150,
+        houseCost: 150,
+        hotelCost: 150,
+      },
+      back: {
+        mortgage: 130,
+        repayment: 143,
+      },
+    },
   },
   {
     id: 25,
@@ -269,6 +648,18 @@ export const fields: IField[] = [
     color: null,
     price: 200,
     type: "station",
+    costs: {
+      front: {
+        tax: 25,
+        taxForTwo: 50,
+        taxForThree: 100,
+        taxForFour: 200,
+      },
+      back: {
+        mortgage: 100,
+        repayment: 110,
+      },
+    },
   },
   {
     id: 24,
@@ -277,6 +668,23 @@ export const fields: IField[] = [
     color: "red",
     price: 240,
     type: "street",
+    costs: {
+      front: {
+        tax: 20,
+        fullSet: 40,
+        withOne: 100,
+        withTwo: 300,
+        withThree: 750,
+        withFour: 925,
+        withHotel: 1100,
+        houseCost: 150,
+        hotelCost: 150,
+      },
+      back: {
+        mortgage: 120,
+        repayment: 132,
+      },
+    },
   },
 
   {
@@ -286,6 +694,23 @@ export const fields: IField[] = [
     color: "red",
     price: 220,
     type: "street",
+    costs: {
+      front: {
+        tax: 18,
+        fullSet: 36,
+        withOne: 90,
+        withTwo: 250,
+        withThree: 700,
+        withFour: 875,
+        withHotel: 1050,
+        houseCost: 150,
+        hotelCost: 150,
+      },
+      back: {
+        mortgage: 110,
+        repayment: 121,
+      },
+    },
   },
   { id: 22, name: "Szansa", position: "right", color: null, type: "chance" },
   {
@@ -295,6 +720,23 @@ export const fields: IField[] = [
     color: "red",
     price: 220,
     type: "street",
+    costs: {
+      front: {
+        tax: 18,
+        fullSet: 36,
+        withOne: 90,
+        withTwo: 250,
+        withThree: 700,
+        withFour: 875,
+        withHotel: 1050,
+        houseCost: 150,
+        hotelCost: 150,
+      },
+      back: {
+        mortgage: 110,
+        repayment: 121,
+      },
+    },
   },
 
   {

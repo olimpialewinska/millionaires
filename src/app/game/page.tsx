@@ -11,6 +11,7 @@ import { Field } from "@/components/Field";
 import Link from "next/link";
 import { Modal } from "@/components/Modal";
 import { SlidingPanel } from "@/components/SlidingPanel";
+import { CardModal } from "@/components/Modal/CardsModal";
 
 export default function Game() {
   const [height, setHeight] = useState(0);
@@ -94,7 +95,7 @@ export default function Game() {
 
       <SlidingPanel open={panelOpen} onClick={togglePanel} />
       <Modal isOpen={cardModal} onClose={toggleCardModal}>
-        xd
+        <CardModal />
       </Modal>
     </div>
   );

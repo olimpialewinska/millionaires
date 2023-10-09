@@ -36,6 +36,18 @@
   .control {
     @apply absolute  bg-green-300 py-2 px-4 flex flex-row items-center justify-center hover:bg-green-400 transition-all ease-in-out shadow-lg cursor-pointer;
   }
+
+  .select {
+    @apply bg-green-300 py-2 px-4 flex flex-row items-center justify-center hover:bg-green-400 transition-all ease-in-out shadow-lg cursor-pointer rounded-md;
+  }
+
+  .flippedCard {
+    @apply absolute w-full h-full cursor-pointer transform rounded-md shadow-lg overflow-hidden flex flex-col items-center bg-white;
+  }
+
+  .row {
+    @apply w-full flex flex-row items-center justify-between mb-1;
+  }
 }
 
 body {
@@ -46,4 +58,13 @@ body {
     rgba(211, 231, 204, 0.6843060661764706) 100%
   );
   box-sizing: border-box;
+  user-select: none;
+}
+
+.gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(211, 231, 204, 1) 0%,
+    rgba(211, 231, 204, 1) 100%
+  );
 }
