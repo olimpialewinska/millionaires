@@ -8,7 +8,7 @@ To get started with the project locally, follow these steps:
 
 ```bash
 git clone https://github.com/olimpialewinska/millionaires.git
-cd millionaires-game
+cd millionaires
 npm install
 npm run dev
 ```
