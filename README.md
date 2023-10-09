@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Millionaires Game
+Welcome to the Millionaires Game project! This is a web-based game built using Next.js and TypeScript, featuring a user interface designed with Tailwind CSS. In the future, it will also incorporate real-time online multiplayer functionality through socket connections. Please note that this project is currently under development.
+<p align="center"><img width="600" alt="Zrzut ekranu 2023-10-9 o 10 30 49" src="https://github.com/olimpialewinska/millionaires/assets/100933608/2bbb1a6e-46d4-4f96-a418-c50b45c583d0"></p>
+
 
 ## Getting Started
-
-First, run the development server:
+To get started with the project locally, follow these steps:
 
 ```bash
+git clone https://github.com/olimpialewinska/millionaires.git
+cd millionaires-game
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open your web browser and visit http://localhost:3000 to access the game.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+This Millionaires Game project aims to provide the following features:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Real-time multiplayer mode over socket connections.
+- High-quality UI designed with Tailwind CSS.
+- Integration with a server for managing game sessions and user accounts (planned feature).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
+The project is built using the following technologies and libraries:
 
-## Learn More
+- Next.js
+- TypeScript
+- Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
