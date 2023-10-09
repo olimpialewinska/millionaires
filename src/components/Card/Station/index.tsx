@@ -17,19 +17,19 @@ export const Station = ({ field }: StreetProps) => {
       <div className="p-2 w-full">
         <div className="row">
           <p>Czynsz </p>
-          <p>{field.costs?.front.tax} $</p>
+          <p>{field.costs?.front?.tax} $</p>
         </div>
         <div className="row">
           <p>Przy posiadaniu 2 </p>
-          <p>{field.costs!.front.taxForTwo} $</p>
+          <p>{field.costs?.front?.taxForTwo} $</p>
         </div>
         <div className="row">
           <p>Przy posiadaniu 3</p>
-          <p>{field.costs!.front.taxForThree} $</p>
+          <p>{field.costs?.front?.taxForThree} $</p>
         </div>
         <div className="row">
           <p>Przy posiadaniu 4</p>
-          <p>{field.costs!.front.taxForFour} $</p>
+          <p>{field.costs?.front?.taxForFour} $</p>
         </div>
       </div>
     </div>

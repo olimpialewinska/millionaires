@@ -13,10 +13,10 @@ export const Back = ({ field }: StreetProps) => {
       </p>
       <p className="text-lg text-center mb-4">
         Wartość hipoteczna <br />
-        {field.costs?.back.mortgage} $
+        {field.costs?.back!.mortgage} $
       </p>
       <p className="text-lg text-center mb-4">
-        Spłata hipoteki <br /> {field.costs?.back.repayment} $
+        Spłata hipoteki <br /> {field.costs?.back!.repayment} $
       </p>
     </div>
   );

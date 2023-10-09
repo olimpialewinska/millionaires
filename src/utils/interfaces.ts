@@ -36,6 +36,14 @@ export interface IIndustry {
   back: ICardBack;
 }
 
+type RecursivePartial<T> = {
+  [P in keyof T]?: T[P] extends (infer U)[]
+    ? RecursivePartial<U>[]
+    : T[P] extends object | undefined
+    ? RecursivePartial<T[P]>
+    : T[P];
+};
+
 export interface IField {
   id: number;
   name: string;
@@ -43,7 +51,7 @@ export interface IField {
   price?: number;
   position: string;
   type: Field;
-  costs?: IStreet | IStation | IIndustry;
+  costs?: RecursivePartial<IStreet & IStation & IIndustry>;
 }
 
 export type Field =
