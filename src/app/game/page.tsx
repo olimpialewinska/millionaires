@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Modal } from "@/components/Modal";
 import { SlidingPanel } from "@/components/SlidingPanel";
 import { CardModal } from "@/components/Modal/CardsModal";
+import { Dices } from "@/components/Dices";
 
 export default function Game() {
   const [height, setHeight] = useState(0);
@@ -67,6 +68,7 @@ export default function Game() {
         >
           <Image src={chance} alt="chance" width={140} className="card" />
           <div className="text-3xl font-bold md:text-6xl">Millionaires</div>
+          <Dices />
           <Image src={chest} alt="chest" width={140} className="card" />
         </div>
       </div>
@@ -85,6 +87,9 @@ export default function Game() {
       >
         <Image src={assets} alt="exit" width={18} height={18} />
         <p className="ml-2 font-bold">Karty</p>
+      </div>
+      <div className="absolute top-0 right-0 py-2 px-4 rounded-bl-md bg-cyan-300 text-xl">
+        <p className="ml-2 font-bold">1000 $</p>
       </div>
       <div
         className="control bottom-0 left-0 rounded-tr-md"

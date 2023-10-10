@@ -38,7 +38,7 @@
   }
 
   .select {
-    @apply bg-green-300 py-2 px-4 flex flex-row items-center justify-center hover:bg-green-400 transition-all ease-in-out shadow-lg cursor-pointer rounded-md;
+    @apply bg-green-400 py-2 px-4 flex flex-row items-center justify-center hover:bg-green-500 transition-all ease-in-out shadow-lg cursor-pointer rounded-md;
   }
 
   .flippedCard {
