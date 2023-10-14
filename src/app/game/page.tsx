@@ -2,7 +2,7 @@
 import { fields } from "@/constants/fields";
 import { use, useEffect, useState } from "react";
 import Image from "next/image";
-
+import { Socket, io } from "socket.io-client";
 import chest from "@/assets/images/chest.png";
 import chance from "@/assets/images/chance.png";
 import assets from "@/assets/images/assets.png";
@@ -13,11 +13,46 @@ import { Modal } from "@/components/Modal";
 import { SlidingPanel } from "@/components/SlidingPanel";
 import { CardModal } from "@/components/Modal/CardsModal";
 import { Dices } from "@/components/Dices";
+import { createSocket } from "@/utils/socket";
+import { useSearchParams } from "next/navigation";
+import { ErrorPage } from "@/components/ErrorPage";
+import { Popup } from "@/components/Popup";
 
 export default function Game() {
   const [height, setHeight] = useState(0);
   const [cardModal, setCardModal] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
+  const searchParams = useSearchParams();
+  const namespace = searchParams.get("namespace");
+  const username = searchParams.get("username");
+  const [socket, setSocket] = useState<Socket | null>(null);
+  const [information, setInformation] = useState("Game is starting...");
+  const [infoPopup, setInfoPopup] = useState(false);
+
+  const handleOpenPopup = () => {
+    setInfoPopup(true);
+
+    const displayTime = 2000;
+
+    setTimeout(() => {
+      setInfoPopup(false);
+    }, displayTime);
+  };
+
+  useEffect(() => {
+    handleOpenPopup();
+  }, [information]);
+
+  useEffect(() => {
+    if (!namespace || !username) {
+      return;
+    }
+    const newSocket = createSocket(namespace, username);
+    newSocket.on("connect", () => {
+      setInformation("Gra zaraz się rozpocznie...");
+      setSocket(newSocket);
+    });
+  }, [username, namespace]);
 
   const toggleCardModal = () => {
     setCardModal(!cardModal);
@@ -40,8 +75,15 @@ export default function Game() {
     };
   }, []);
 
+  if (!namespace || !username || !socket) {
+    return <ErrorPage />;
+  }
+
   return (
     <div className="flex justify-center items-center h-screen py-12 sm:py-2 relative">
+      <Popup isOpen={infoPopup}>
+        <p>{information}</p>
+      </Popup>
       <div
         className="rounded-md shadow-lg bg-black overflow-scroll"
         style={{

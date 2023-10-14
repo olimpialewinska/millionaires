@@ -19,7 +19,7 @@ export const Street = ({ field }: StreetProps) => {
         }}
       >
         <p className="text-sm">Karta wlasności</p>
-        <p className="text-xl text-center">{field.name}</p>
+        <p className="text-xl text-center">{field.name + field.id}</p>
       </div>
       <div className="p-2 w-full">
         <div className="row">

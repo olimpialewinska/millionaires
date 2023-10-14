@@ -14,7 +14,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "sass": "^1.69.1"
+    "sass": "^1.69.1",
+    "socket.io-client": "^4.7.2"
   },
   "devDependencies": {
     "@types/node": "latest",
